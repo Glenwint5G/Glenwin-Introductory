@@ -1,0 +1,58 @@
+// Define Variables for Colors and Dimensions
+$white: #ffffff;
+$grey: rgba(255, 255, 255, 0.9);
+$black: #000000;
+$primary-color: #3498db;  // Example primary color
+
+// Global Styles
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  position: relative;
+}
+
+// Background Image with Dim Effect
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images folder/Forwebpageimg1.png') no-repeat center center fixed;
+  background-size: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+// Introduction Box (Centered and Styled)
+.intro-box {
+  background: $grey;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+}
+
+// Bottom Left Icons (Social Icons)
+.image-container {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+
+  img {
+    height: 50px;
+  }
+}
